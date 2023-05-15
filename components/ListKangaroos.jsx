@@ -24,22 +24,13 @@ const ListKangaroos = () => {
     router.push(`/edit/${rowData.id}`);
   };
 
-  const handleFriendliness = (cellData) => {
-    console.log(cellData);
-  };
-
   return (
     <div className={styles.container}>
       <div className={styles.header}>
         <h1>List of Kangaroos</h1>
         <Button text="Add" icon="add" height="40px" onClick={handleAddBtn} />
       </div>
-      <DataGrid
-        dataSource={rows}
-        keyExpr="id"
-        repaintChangesOnly
-        onEditingStart={(e) => console.log("Editing started", e)}
-      >
+      <DataGrid dataSource={rows} keyExpr="id" repaintChangesOnly>
         <Column dataField="id" caption="ID" />
         <Column dataField="name" caption="Name" />
         <Column dataField="birthday" caption="Birthday" />

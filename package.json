@@ -9,11 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/roboto": "^4.5.8",
     "@next/font": "13.4.1",
+    "devextreme": "22.2.6",
+    "devextreme-react": "22.2.6",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.1",
+    "formik": "^2.2.9",
+    "include-media": "^2.0.0",
     "next": "13.4.1",
+    "next-sass": "^1.0.3",
+    "node-sass": "^8.0.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-datepicker": "^4.11.0",
+    "react-dom": "18.2.0",
+    "react-select": "^5.7.3",
+    "sass": "^1.62.1",
+    "yup": "^1.1.1"
   }
 }

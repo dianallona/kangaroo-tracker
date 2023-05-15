@@ -1,0 +1,66 @@
+@import "mixins", "variables";
+@import "../node_modules/include-media/dist/include-media";
+
+.main {
+  margin: 0 2em;
+  @include media(">=desktop") {
+    margin: 0 10em;
+  }
+
+  .dx-widget {
+    background-color: $color-default;
+    color: white;
+
+    i {
+      color: white;
+    }
+  }
+
+  .edit-container,
+  .add-container {
+    margin: 0 2em;
+    @include media(">=desktop") {
+      margin: 0 10em;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1,
+  label {
+    font-weight: bold;
+  }
+  input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
+    color: #333;
+
+    &:focus {
+      outline: none;
+      border-color: $color-default;
+    }
+  }
+
+  button {
+    background-color: $color-default;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: #0062cc;
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+    }
+  }
+}
